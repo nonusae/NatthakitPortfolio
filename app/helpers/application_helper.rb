@@ -9,4 +9,12 @@ module ApplicationHelper
            # use plus becauase ruby return last value from method
          end         
     end
+
+    def source_helper(layout_name)
+        if session[:source]
+            greeting = "Thank for visiting me from #{session[:source]} and you are on #{layout_name} layout"
+            content_tag(:p,greeting, class: "source-greeting")
+        end
+    end
+
 end
