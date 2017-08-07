@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/nonusae/natthakit_view_helper_tool
+  revision: a685f32d88d66a29ca972aa7806d1b341dae6b0e
+  specs:
+    natthakit_view_helper_tool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -200,6 +206,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  natthakit_view_helper_tool!
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.7)

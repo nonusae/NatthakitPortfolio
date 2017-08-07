@@ -17,4 +17,8 @@ module ApplicationHelper
         end
     end
 
+    def copyright_generator
+      NatthakitViewHelperTool::Renderer.copyright 'Natthakit Iewprasert', 'All rights reserved' 
+    end
+
 end

@@ -40,3 +40,4 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'natthakit_view_helper_tool', git:"https://github.com/nonusae/natthakit_view_helper_tool"
