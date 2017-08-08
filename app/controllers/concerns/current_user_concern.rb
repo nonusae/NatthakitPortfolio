@@ -12,11 +12,20 @@ module CurrentUserConcern
     end
 
     def guest_user
-        OpenStruct.new(name: "Guest User",
-                      first_name:"Guest" ,
-                      last_name: "User",
-                      email: "guest@guest.com" 
-                      )
+        # OpenStruct.new(name: "Guest User",
+        #               first_name:"Guest" ,
+        #               last_name: "User",
+        #               email: "guest@guest.com" 
+        #               )
+        ## We first implement Openstruct to stiafy our condition for null object
+        ## but we want to have real User object when integrate Petergate to app 
+
+        guest = GuestUser.new
+        guest.name = "Guest User"
+        guest.first_name = "Guest"
+        guest.last_name = "User"
+        guest.email = "guest@example.com"
+        guest
     end
 
 end
