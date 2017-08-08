@@ -1,10 +1,4 @@
 GIT
-  remote: https://github.com/nonusae/natthakit_view_helper_tool
-  revision: a685f32d88d66a29ca972aa7806d1b341dae6b0e
-  specs:
-    natthakit_view_helper_tool (0.1.0)
-
-GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -105,6 +99,7 @@ GEM
     mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
+    natthakit_view_helper_tool (0.1.0)
     nio4r (2.1.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
@@ -206,7 +201,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  natthakit_view_helper_tool!
+  natthakit_view_helper_tool (~> 0.1.0)
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.7)

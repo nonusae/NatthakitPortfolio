@@ -23,6 +23,8 @@ gem 'devise', '~> 4.2'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 
+gem 'natthakit_view_helper_tool', '~> 0.1.0'
+
 
 group :development, :test do
 
@@ -40,4 +42,3 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'natthakit_view_helper_tool', git:"https://github.com/nonusae/natthakit_view_helper_tool"
