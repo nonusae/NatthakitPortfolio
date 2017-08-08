@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.2'
 
-gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 
 gem 'natthakit_view_helper_tool', '~> 0.1.0'
