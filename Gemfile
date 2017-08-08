@@ -24,7 +24,7 @@ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'jquery-rails'
 
 gem 'natthakit_view_helper_tool', '~> 0.1.0'
-
+gem 'petergate', '~> 1.7'
 
 group :development, :test do
 
