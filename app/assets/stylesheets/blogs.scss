@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+
 
 
 /*
@@ -166,4 +168,15 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+
+
+
+/*
+ * Custom style
+ */
+
+.social-links li {
+  font-size: 1.8em
 }
