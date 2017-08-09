@@ -17,17 +17,7 @@
 
   <body>
   <!-- Start of nav -->
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">New features</a>
-          <a class="nav-link" href="#">Press</a>
-          <a class="nav-link" href="#">New hires</a>
-          <a class="nav-link" href="#">About</a>
-        </nav>
-      </div>
-    </div>
+      <%= render 'shared/blog_nav' %>
   <!-- end of nav -->
 
   <!-- Start of blog header -->
@@ -44,9 +34,6 @@
 
       <div class="row">
   <!-- end -->
-
-    <%= login_helper %>
-
 
     <%= yield %>
 
@@ -95,9 +82,6 @@
       </p>
     </footer>
 <!-- end of footer -->
-
-    <%= render "shared/nav", location: "bottom" %>
-
 
     <%= source_helper("blog") %>
 
