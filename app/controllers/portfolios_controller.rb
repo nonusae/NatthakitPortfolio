@@ -1,13 +1,22 @@
 class PortfoliosController < ApplicationController
+    protect_from_forgery prepend: true
     before_action :set_portfolio_item, only: [:edit, :show,:update, :destroy]
     layout 'portfolio'
 
     access all: [:show, :index, :angular], 
-           user: {except: [:destroy, :new, :create, :update, :edit]}, 
+           user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, 
            site_admin: :all
 
     def index
-        @portfolio_items = Portfolio.all
+        @portfolio_items = Portfolio.by_position
+    end
+
+    def sort
+        params[:order].each do  |key, value|
+            Portfolio.find(value[:id]).update(position: value[:position])
+        end
+
+         head :ok
     end
 
     def angular
