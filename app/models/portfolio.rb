@@ -1,7 +1,8 @@
 class Portfolio < ApplicationRecord
     has_many :technologies
-    accepts_nested_attributes_for :technologies, 
-                                reject_if: lambda { |attrs| attrs['name'].blank?} 
+    accepts_nested_attributes_for :technologies,
+                                  allow_destroy: true,
+                                  reject_if: lambda { |attrs| attrs['name'].blank?} 
     #lambda mean we want to encapsulate the process and pass it to reject_if
     #For testing in console(Create portfolio with 2 technologies) : Portfolio.create!(title: "Foo", subtitle:"Bar", body:"Foobbar",technologies_attributes: [{name: 'foo'},{name: "bar"}])
 

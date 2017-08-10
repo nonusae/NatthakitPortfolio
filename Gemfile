@@ -34,6 +34,8 @@ gem 'mini_magick', '~> 4.6'
 gem 'carrierwave-aws', '~> 1.0', '>=1.0.2'
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.2'
 
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
+
 group :development, :test do
 
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
