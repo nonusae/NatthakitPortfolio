@@ -10,12 +10,24 @@
     <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
   </div>
 
+
   <div class="form-group">
-    <%= form.label :body %>
+    <%= form.label :topic_id %>
+    <%= form.collection_select(:topic_id, Topic.all, :id, :title,
+                              {
+                                selected: blog.topic.id,
+                                include_blank: true
+                              },
+                              class: 'form-control'
+                            )
+    %> 
+  </div>
+
+  <div class="form-group">
     <%= form.text_area :body, id: :blog_body, class: 'form-control', rows: 15 %>
   </div>
 
   <div class="form-group">
-    <%= form.submit "Update blog", class: 'btn btn-primary' %>
+    <%= form.submit "Submit", class: 'btn btn-primary' %>
   </div>
 <% end %>
