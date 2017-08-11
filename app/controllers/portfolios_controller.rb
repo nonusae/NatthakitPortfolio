@@ -1,5 +1,6 @@
 class PortfoliosController < ApplicationController
-    protect_from_forgery prepend: true
+    # protect_from_forgery prepend: true
+    skip_before_action :verify_authenticity_token
     before_action :set_portfolio_item, only: [:edit, :show,:update, :destroy]
     layout 'portfolio'
 
@@ -15,7 +16,6 @@ class PortfoliosController < ApplicationController
         params[:order].each do  |key, value|
             Portfolio.find(value[:id]).update(position: value[:position])
         end
-
          head :ok
     end
 
